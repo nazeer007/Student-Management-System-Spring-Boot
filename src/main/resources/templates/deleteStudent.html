@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="addAndUpdateStudent.css" />
+<style>
+.warning{
+	text-align:center;
+	color:red;
+	font-size:12px;
+}
+.form-group{
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Student</h1>
+        
+        <form action="/del" method="post" class="form-container"> <!-- Corrected the action attribute -->
+            <div class="form-group">
+                <label for="univIdDelete">University ID: </label>
+                <input type="text" id="univIdDelete" name="univID" placeholder="Enter University Id" required> <!-- Added name attribute -->
+            </div>
+            <div class="form-submit">
+            <button type="submit" class="button">Delete Student</button>
+            </div>
+            <p class="warning">Warning: This action cannot be undone. Please be certain while deleting</p>
+        </form>
+    </div>
+</body>
+</html>

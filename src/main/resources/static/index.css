@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+*{
+	font-family:Arial;
+}
+h1{
+    color: orangered;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+.action{
+    border: 2px solid rgb(247, 255, 203);
+    box-shadow: 2px 1px 4px 1px rgba(137, 137, 136, 0.564);
+    padding: 10px;
+    border-radius:10px;
+}
+a.button{
+    color: blue;
+    text-decoration: none;
+}
+p{
+    color: black;
+}
+.action:hover{
+    border: 2px solid rgb(146, 242, 129);
+    box-shadow: 2px 1px 4px 1px rgb(100, 212, 80);
+    padding: 10px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="displayStudents.css">
+</head>
+<body>
+<div class="container">
+		<h1>Student List</h1>
+		<table class="students-table" border="1">
+			<thead>
+				<tr>
+					<th>University ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Branch</th>
+					<th>Address</th>
+				</tr>				
+			</thead>
+			<tbody>
+				<tr>
+					<td th:text="${student.univId}"></td>
+					<td th:text="${student.name}"></td>
+					<td th:text="${student.email}"></td>
+					<td th:text="${student.branch}"></td>
+					<td th:text="${student.address}"></td>
+				</tr>
+			</tbody>
+
+		</table>
+	</div>
+</body>
+</html>
